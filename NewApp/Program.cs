@@ -6,3 +6,6 @@ emp.HienTT();
 Student std = new Student();
 std.Nhapthongtin();
 std.Hienthongtin();
+Fruit hq = new Fruit();
+hq.Nhapttin();
+hq.Hienttin();

@@ -14,7 +14,7 @@ namespace NewApp.Models
                         }
                     public void Hienthongtin()
                     {
-                        System.Console.Write(MaSV + "-" + TenSV);
+                        System.Console.WriteLine(MaSV + "-" + TenSV);
                     }    
             }   
 }    
