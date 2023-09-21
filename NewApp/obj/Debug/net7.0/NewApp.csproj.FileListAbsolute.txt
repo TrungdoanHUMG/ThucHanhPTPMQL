@@ -12,3 +12,17 @@ D:\PTPMQL\NewApp\obj\Debug\net7.0\refint\NewApp.dll
 D:\PTPMQL\NewApp\obj\Debug\net7.0\NewApp.pdb
 D:\PTPMQL\NewApp\obj\Debug\net7.0\NewApp.genruntimeconfig.cache
 D:\PTPMQL\NewApp\obj\Debug\net7.0\ref\NewApp.dll
+C:\ThucHanhPTPMQL\NewApp\bin\Debug\net7.0\NewApp.exe
+C:\ThucHanhPTPMQL\NewApp\bin\Debug\net7.0\NewApp.deps.json
+C:\ThucHanhPTPMQL\NewApp\bin\Debug\net7.0\NewApp.runtimeconfig.json
+C:\ThucHanhPTPMQL\NewApp\bin\Debug\net7.0\NewApp.dll
+C:\ThucHanhPTPMQL\NewApp\bin\Debug\net7.0\NewApp.pdb
+C:\ThucHanhPTPMQL\NewApp\obj\Debug\net7.0\NewApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\ThucHanhPTPMQL\NewApp\obj\Debug\net7.0\NewApp.AssemblyInfoInputs.cache
+C:\ThucHanhPTPMQL\NewApp\obj\Debug\net7.0\NewApp.AssemblyInfo.cs
+C:\ThucHanhPTPMQL\NewApp\obj\Debug\net7.0\NewApp.csproj.CoreCompileInputs.cache
+C:\ThucHanhPTPMQL\NewApp\obj\Debug\net7.0\NewApp.dll
+C:\ThucHanhPTPMQL\NewApp\obj\Debug\net7.0\refint\NewApp.dll
+C:\ThucHanhPTPMQL\NewApp\obj\Debug\net7.0\NewApp.pdb
+C:\ThucHanhPTPMQL\NewApp\obj\Debug\net7.0\NewApp.genruntimeconfig.cache
+C:\ThucHanhPTPMQL\NewApp\obj\Debug\net7.0\ref\NewApp.dll
