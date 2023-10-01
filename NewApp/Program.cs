@@ -1,5 +1,5 @@
 ﻿using NewApp.Models;
-
+using System.Collections;
 // Employee emp = new Employee();
 // emp.NhapTT();
 // emp.HienTT();
@@ -9,15 +9,14 @@
 // Fruit hq = new Fruit();
 // hq.Nhapttin();
 // hq.Hienttin();
-int n ; 
-System.Console.WriteLine("n = ");
-n = Convert.ToInt16(Console.ReadLine());
-int[] intArr = new int[n];
-for(int i =0 ; i < intArr.Length ; i++)
+ArrayList psList = new ArrayList();
+for(int i =0 ; i < 2 ; i++)
 {
-    intArr[i] = i*2 ;
+    Student ps = new Student();
+    ps.Nhapthongtin();
+    psList.Add(ps);   
 }
-for(int i =0 ; i < intArr.Length ; i++)
+foreach(Student a in psList)
 {
-    System.Console.WriteLine("Mang ["+ i + "] = " + intArr[i]);
+    Console.WriteLine(a.MaSV + "-" + a.TenSV);
 }
