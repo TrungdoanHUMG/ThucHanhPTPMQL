@@ -11,9 +11,9 @@ namespace DemoMVC.Controllers
        }
 
        [HttpPost]
-       public IActionResult Menu(string fName )
+       public IActionResult Menu(string fName , string ABC )
        {
-        string strResult = "Hello" + fName ;
+        string strResult = "Hello" + fName + "-" + ABC ; 
         ViewBag.thongbao = strResult;
         return View();
        }
