@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "d:\\ThucHanhPTPMQL\\NewApp\\NewApp.csproj": {}
   },
   "projects": {
@@ -12,9 +13,22 @@
         "projectPath": "d:\\ThucHanhPTPMQL\\NewApp\\NewApp.csproj",
         "packagesPath": "C:\\Users\\Trung Doan\\.nuget\\packages\\",
         "outputPath": "d:\\ThucHanhPTPMQL\\NewApp\\obj\\",
+=======
+    "c:\\ThucHanhPTPMQL\\NewApp\\NewApp.csproj": {}
+  },
+  "projects": {
+    "c:\\ThucHanhPTPMQL\\NewApp\\NewApp.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "c:\\ThucHanhPTPMQL\\NewApp\\NewApp.csproj",
+        "projectName": "NewApp",
+        "projectPath": "c:\\ThucHanhPTPMQL\\NewApp\\NewApp.csproj",
+        "packagesPath": "C:\\Users\\trung\\.nuget\\packages\\",
+        "outputPath": "c:\\ThucHanhPTPMQL\\NewApp\\obj\\",
+>>>>>>> 5d3c70641523147d11d7df4e4b049e6f91bf11b3
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Trung Doan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\trung\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

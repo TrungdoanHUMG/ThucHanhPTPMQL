@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "gUosqcei+85Hx2cIupii8OhupaA3Emyqc7DdSmHV5Q57OnMf0YGl0ukAhQE17Jeh+hsivRK9oNGBre8d6SW8rQ==",
   "success": true,
   "projectFilePath": "d:\\ThucHanhPTPMQL\\NewApp\\NewApp.csproj",
+=======
+  "dgSpecHash": "sEvMyaOmYd0tUUYi+PWK3ObYqjch8d8j2Q58OoVWW5Y/B0LSzbp6wFot324xP+8lWG0JEzY+T/IGYIDIF6KNZw==",
+  "success": true,
+  "projectFilePath": "c:\\ThucHanhPTPMQL\\NewApp\\NewApp.csproj",
+>>>>>>> 5d3c70641523147d11d7df4e4b049e6f91bf11b3
   "expectedPackageFiles": [],
   "logs": []
 }
