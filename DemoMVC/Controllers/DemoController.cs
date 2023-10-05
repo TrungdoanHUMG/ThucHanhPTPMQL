@@ -5,15 +5,15 @@ namespace DemoMVC.Controllers
 {
     public class DemoController : Controller
     {
-        public IActionResult Menu()
+        public IActionResult Index()
        {
         return View();
        }
 
        [HttpPost]
-       public IActionResult Menu(string fName , string ABC )
+       public IActionResult Index(string fName , string ABC )
        {
-        string strResult = "Hello" + fName + "-" + ABC ; 
+        string strResult = "Hello" + fName + "-" + ABC ;
         ViewBag.thongbao = strResult;
         return View();
        }
