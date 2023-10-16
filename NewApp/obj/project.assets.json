@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\ThucHanhPTPMQL\\NewApp\\NewApp.csproj",
+      "projectUniqueName": "C:\\ThucHanhPTPMQL\\NewApp\\NewApp.csproj",
       "projectName": "NewApp",
-      "projectPath": "c:\\ThucHanhPTPMQL\\NewApp\\NewApp.csproj",
+      "projectPath": "C:\\ThucHanhPTPMQL\\NewApp\\NewApp.csproj",
       "packagesPath": "C:\\Users\\trung\\.nuget\\packages\\",
-      "outputPath": "c:\\ThucHanhPTPMQL\\NewApp\\obj\\",
+      "outputPath": "C:\\ThucHanhPTPMQL\\NewApp\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\trung\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -62,5 +62,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\ThucHanhPTPMQL\\NewApp\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
