@@ -16,6 +16,14 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\ThucHanhPTPMQL\FirstWebMVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/ThucHanhPTPMQL/FirstWebMVC/Views/BT/GiaiPTB2.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQlRcR2lhaVBUQjIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/ThucHanhPTPMQL/FirstWebMVC/Views/BT/Tinhluong.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQlRcVGluaGx1b25nLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/ThucHanhPTPMQL/FirstWebMVC/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
