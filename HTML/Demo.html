@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+#myDIV {
+  border: 1px solid black;
+}
+</style>
+</head>
 <body>
 
-<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+<div id="myDIV" onwheel="myFunction()">This example demonstrates how to assign an "onwheel" event event to a DIV element. Roll the mouse wheel over me - either up or down!</div>
 <h1>Nguyễn Trung Đoàn</h1>
-<p>The function bigImg() is triggered when the user mouse over the image. This function enlarges the image.</p>
-<p>The function normalImg() is triggered when the mouse pointer is moved out of the image. That function sets the height and width of the image back to normal.</p>
+<p>A function is triggered when you roll the mouse wheel over div. The function sets the font-size of div to 35 pixels.</p>
+
+<p><strong>Note:</strong> The onwheel event is not supported in Internet Explorer or Safari.</p>
 
 <script>
-function bigImg(x) {
-  x.style.height = "64px";
-  x.style.width = "64px";
-}
-
-function normalImg(x) {
-  x.style.height = "32px";
-  x.style.width = "32px";
+function myFunction() {
+  document.getElementById("myDIV").style.fontSize = "35px";
 }
 </script>
 
