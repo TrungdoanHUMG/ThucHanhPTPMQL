@@ -1,14 +1,17 @@
 <!DOCTYPE html>
 <html>
 <body>
+  <h1>Nguyễn Trung Đoàn</h1>
+<p>When you submit the form, a function is triggered which alerts some text.</p>
 
-Some text: <input type="text" value="Select me!!" onselect="myFunction()">
-<h1>Nguyễn Trung Đoàn</h1>
-<p>The function myFunction() is triggered when some text is selected in the input field. The function shows a message.</p>
+<form action="/action_page.php" onsubmit="myFunction()">
+  Enter name: <input type="text" name="fname">
+  <input type="submit" value="Submit">
+</form>
 
 <script>
 function myFunction() {
-  alert("You have selected some text!");
+  alert("The form was submitted");
 }
 </script>
 
