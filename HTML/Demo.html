@@ -2,42 +2,43 @@
 <html>
 <head>
 <style>
-#droptarget {
+.droptarget {
   float: left; 
-  width: 200px; 
+  width: 100px; 
   height: 35px;
-  margin: 55px;
-  margin-top: 155px;
+  margin: 15px;
   padding: 10px;
   border: 1px solid #aaaaaa;
 }
 </style>
 </head>
 <body>
-<h1> trung đoàn</h1>
-<p ondragstart="dragStart(event)" draggable="true" id="dragtarget">Drag me into the rectangle!</p>
 
-<div id="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+<p>Drag the p element back and forth between the two rectangles:</p>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" draggable="true" id="dragtarget">Trung Đoàn is me!</p>
 </div>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
 
 <p style="clear:both;" id="demo"></p>
 
 <script>
 function dragStart(event) {
   event.dataTransfer.setData("Text", event.target.id);
+  document.getElementById("demo").innerHTML = "Started to drag the p element";
 }
 
 function allowDrop(event) {
   event.preventDefault();
-  document.getElementById("demo").innerHTML = "The p element is OVER the droptarget.";
-  event.target.style.border = "4px dotted green";
 }
 
 function drop(event) {
   event.preventDefault();
   let data = event.dataTransfer.getData("Text");
   event.target.appendChild(document.getElementById(data));
-  document.getElementById("demo").innerHTML = "The p element was dropped.";
+  document.getElementById("demo").innerHTML = "The p element was dropped";
 }
 </script>
 
