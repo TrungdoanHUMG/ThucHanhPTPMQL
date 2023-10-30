@@ -1,18 +1,12 @@
 <!DOCTYPE html>
 <html>
-<body ononline="onFunction()" onoffline="offFunction()">
-<h1>Trung ĐOàn</h1>
-<p>Open the File menu and click on "Work Offline" to toggle between working online and offline.</p>
+<body onpageshow="myFunction()">
 
-<p><strong>Note:</strong> The ononline and onoffline events are only supported in Firefox and Internet Explorer version 8 to 10.</p>
+<h1>Hello World!</h1>
 
 <script>
-function onFunction() {
-  alert ("Your browser is working online.");
-}
-
-function offFunction() {
-  alert ("Your browser is working offline.");
+function myFunction() {
+  alert("Welcome!");
 }
 </script>
 
