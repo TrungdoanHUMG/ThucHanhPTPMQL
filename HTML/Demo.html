@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
-<body onbeforeprint="myFunction()">
+<body onbeforeunload="return myFunction()">
+<h1>Nguyễn Trung ĐOàn</h1>
+<p>Close this window, press F5 or click on the link below to invoke the onbeforeunload event.</p>
 
-<h1>Try to print this document</h1>
-<p><b>Tip:</b> Keyboard shortcuts, such as Ctrl+P sets the page to print.</p>
-<p><b>Note:</b> The onbeforeprint event is not supported in Safari and Opera.</p>
-<h2>Đoàn Trung Ngyễn</h2>
+<a href="https://www.w3schools.com">Click here to go to w3schools.com</a>
+  
 <script>
 function myFunction() {
-  alert("You are about to print this document!");
+  return "Write something clever here...";
 }
 </script>
 
