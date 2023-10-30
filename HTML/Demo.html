@@ -1,23 +1,47 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html>
 <head>
 <style>
-#myDIV {
-  border: 1px solid black;
+.droptarget {
+  float: left; 
+  width: 100px; 
+  height: 35px;
+  margin: 15px;
+  padding: 10px;
+  border: 1px solid #aaaaaa;
 }
 </style>
 </head>
 <body>
 
-<div id="myDIV" onwheel="myFunction()">This example demonstrates how to assign an "onwheel" event event to a DIV element. Roll the mouse wheel over me - either up or down!</div>
-<h1>Nguyễn Trung Đoàn</h1>
-<p>A function is triggered when you roll the mouse wheel over div. The function sets the font-size of div to 35 pixels.</p>
+<p>Drag the p element back and forth between the two rectangles:</p>
 
-<p><strong>Note:</strong> The onwheel event is not supported in Internet Explorer or Safari.</p>
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+  <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Trung Đoàn!</p>
+</div>
+
+<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+<p style="clear:both;" id="demo"></p>
 
 <script>
-function myFunction() {
-  document.getElementById("myDIV").style.fontSize = "35px";
+function dragStart(event) {
+  event.dataTransfer.setData("Text", event.target.id);
+}
+
+function dragging(event) {
+  document.getElementById("demo").innerHTML = "The p element is being dragged";
+}
+
+function allowDrop(event) {
+  event.preventDefault();
+}
+
+function drop(event) {
+  event.preventDefault();
+  let data = event.dataTransfer.getData("Text");
+  event.target.appendChild(document.getElementById(data));
+  document.getElementById("demo").innerHTML = "The p element was dropped";
 }
 </script>
 
