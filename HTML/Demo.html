@@ -17,7 +17,7 @@
 <p>Drag the p element back and forth between the two rectangles:</p>
 
 <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <p ondragstart="dragStart(event)" ondrag="dragging(event)" draggable="true" id="dragtarget">Trung Đoàn!</p>
+  <p ondragstart="dragStart(event)" ondragend="dragEnd(event)" draggable="true" id="dragtarget"> Đoàn is me!</p>
 </div>
 
 <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
@@ -27,10 +27,11 @@
 <script>
 function dragStart(event) {
   event.dataTransfer.setData("Text", event.target.id);
+  document.getElementById("demo").innerHTML = "Started to drag the p element";
 }
 
-function dragging(event) {
-  document.getElementById("demo").innerHTML = "The p element is being dragged";
+function dragEnd(event) {
+  document.getElementById("demo").innerHTML = "Finished dragging the p element.";
 }
 
 function allowDrop(event) {
@@ -41,7 +42,6 @@ function drop(event) {
   event.preventDefault();
   let data = event.dataTransfer.getData("Text");
   event.target.appendChild(document.getElementById(data));
-  document.getElementById("demo").innerHTML = "The p element was dropped";
 }
 </script>
 
