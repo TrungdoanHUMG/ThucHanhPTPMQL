@@ -2,13 +2,13 @@
 <html>
 <body>
 
-<input type="text" oncopy="myFunction()" value="Try to copy this text">
-<h1>Trung Đoàn</h1>
+<input type="text" oncut="myFunction()" value="Try to cut this text">
+
 <p id="demo"></p>
 
 <script>
 function myFunction() {
-  document.getElementById("demo").innerHTML = "You copied text!"
+  document.getElementById("demo").innerHTML = "You cut text!";
 }
 </script>
 
