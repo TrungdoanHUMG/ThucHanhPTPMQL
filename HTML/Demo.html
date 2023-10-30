@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <h1>Nguyễn Trung Đoàn</h1>
-<p>A function is triggered when the user releases a key in the input field. The function transforms the character to upper case.</p>
-Enter your name: <input type="text" id="fname" onkeyup="myFunction()">
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
+<h1>Nguyễn Trung Đoàn</h1>
+<p>A function is triggered when the button is clicked. The function outputs some text in a p element with id="demo".</p>
 
 <script>
 function myFunction() {
-  let x = document.getElementById("fname");
-  x.value = x.value.toUpperCase();
+  document.getElementById("demo").innerHTML = "Hello World";
 }
 </script>
 
