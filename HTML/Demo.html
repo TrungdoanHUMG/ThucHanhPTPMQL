@@ -1,46 +1,30 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
 <head>
 <style>
-.droptarget {
-  float: left; 
-  width: 100px; 
-  height: 35px;
-  margin: 15px;
-  padding: 10px;
-  border: 1px solid #aaaaaa;
+#myDIV {
+  border: 1px solid black;
+  width: 200px;
+  height: 100px;
+  overflow: scroll;
 }
 </style>
 </head>
 <body>
+<h1>Trung Đoàn</h1>
+<p>Try the scrollbar in div.</p>
 
-<p>Drag the p element back and forth between the two rectangles:</p>
-
-<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
-  <p ondragstart="dragStart(event)" draggable="true" id="dragtarget">Trung Đoàn is me!</p>
-</div>
-
-<div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
-
-<p style="clear:both;" id="demo"></p>
+<div id="myDIV" onscroll="myFunction()">In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since.
+<br><br>
+'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't had the advantages that you've had.'</div>
 
 <script>
-function dragStart(event) {
-  event.dataTransfer.setData("Text", event.target.id);
-  document.getElementById("demo").innerHTML = "Started to drag the p element";
-}
-
-function allowDrop(event) {
-  event.preventDefault();
-}
-
-function drop(event) {
-  event.preventDefault();
-  let data = event.dataTransfer.getData("Text");
-  event.target.appendChild(document.getElementById(data));
-  document.getElementById("demo").innerHTML = "The p element was dropped";
+function myFunction() {
+  document.getElementById("myDIV").style.color = "red";
 }
 </script>
+
+<p>A function is triggered when you scroll in div. The function sets the color of the text in div to red.</p>
 
 </body>
 </html>
