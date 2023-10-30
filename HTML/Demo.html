@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html>
 <body>
-  <h1>Nguyễn Trung Đoàn</h1>
-<p id="p1" onmousedown="mouseDown()" onmouseup="mouseUp()">
-Click the text! The mouseDown() function is triggered when the mouse button is pressed down over this paragraph. The function sets the color of the text to red. The mouseUp() function is triggered when the mouse button is released. The mouseUp() function sets the color of the text to green.
-</p>
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="smiley.gif" alt="Smiley" width="32" height="32">
+<h1>Nguyễn Trung Đoàn</h1>
+<p>The function bigImg() is triggered when the user mouse over the image. This function enlarges the image.</p>
+<p>The function normalImg() is triggered when the mouse pointer is moved out of the image. That function sets the height and width of the image back to normal.</p>
 
 <script>
-function mouseDown() {
-  document.getElementById("p1").style.color = "red";
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
 }
 
-function mouseUp() {
-  document.getElementById("p1").style.color = "green";
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
 }
 </script>
 
