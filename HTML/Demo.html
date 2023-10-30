@@ -2,8 +2,16 @@
 <html>
 <body>
 
-<h1 style="color:blue;text-align:center;">This is a header</h1>
-<p style="color:green;">Trung Đoàn.</p>
+<div tabindex="1">Đoàn</div><br>
+<div tabindex="3">Trung </div><br>
+<div tabindex="2">Nguyễn</div>
+
+<script>
+// At start, set focus on the first div
+document.getElementsByTagName('div')[0].focus();
+</script>
+
+<p tabindex="4"><b>Note:</b> Try navigating the elements by using the "Tab" button on your keyboard.</p>
 
 </body>
 </html>
