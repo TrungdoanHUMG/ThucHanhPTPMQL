@@ -2,18 +2,14 @@
 <html>
 <body>
   <h1>Nguyễn Trung Đoàn</h1>
-<p>Write something in the text field to trigger a function.</p>
+<form action="/action_page.php" method="get">
+  Name: <input type="text" oninvalid="alert('You must fill out the form!');" name="fname" required>
+  <input type="submit" value="Submit">
+</form>
 
-<input type="text" id="myInput" oninput="myFunction()">
+<p>If you click submit, without filling out the text field, an alert message will occur.</p>
 
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  let x = document.getElementById("myInput").value;
-  document.getElementById("demo").innerHTML = "You wrote: " + x;
-}
-</script>
+<p><strong>Note:</strong> The oninvalid event is not supported in Safari.</p>
 
 </body>
 </html>
