@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
-<body onunload="myFunction()">
+<body>
 
-<h1>Welcome to my Home Page</h1>
+Enter your name: <input type="text" name="fname" id="fname" onblur="myFunction()">
 <h1>Nguyễn Trung Đoàn</h1>
-<p>Close this window or press F5 to reload the page.</p>
-<p><strong>Note:</strong> Due to different browser settings, this event may not always work as expected.</p>
+<p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
 
 <script>
 function myFunction() {
-  alert("Thank you for visiting W3Schools!");
+  let x = document.getElementById("fname");
+  x.value = x.value.toUpperCase();
 }
 </script>
 
