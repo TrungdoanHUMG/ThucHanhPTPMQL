@@ -2,16 +2,13 @@
 <html>
 <body>
   <h1>Nguyễn Trung Đoàn</h1>
-<p>When you submit the form, a function is triggered which alerts some text.</p>
+<p>A function is triggered when the user is pressing a key in the input field.</p>
 
-<form action="/action_page.php" onsubmit="myFunction()">
-  Enter name: <input type="text" name="fname">
-  <input type="submit" value="Submit">
-</form>
+<input type="text" onkeydown="myFunction()">
 
 <script>
 function myFunction() {
-  alert("The form was submitted");
+  alert("You pressed a key inside the input field");
 }
 </script>
 
