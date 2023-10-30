@@ -1,14 +1,24 @@
 <!DOCTYPE html>
 <html>
-<body>
+<body onhashchange="myFunction()">
 
-<img src="image.gif" onerror="myFunction()">
-<h1>Nguyễn Trung Đoàn</h1>
-<p>A function is triggered if an error occurs when loading the image. The function shows an alert box with a text. In this example we refer to an image that does not exist, therefore the onerror event occurs.</p>
+<p>Click the button to change the anchor part of the current URL to #part5</p>
+
+<button onclick="changePart()">Try it</button>
+
+<p id="demo"></p>
 
 <script>
+// Using the location.hash property to change the anchor part
+function changePart() {
+  location.hash = "part5";
+  let x = "The anchor part is now: " + location.hash;
+  document.getElementById("demo").innerHTML = x;
+}
+
+// Alert some text if there has been changes to the anchor part
 function myFunction() {
-  alert("The image could not be loaded.");
+  alert("The anchor part has changed! - Trung Đoàn");
 }
 </script>
 
