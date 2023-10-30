@@ -2,14 +2,18 @@
 <html>
 <body>
   <h1>Nguyễn Trung Đoàn</h1>
-<form action="/action_page.php" method="get">
-  Name: <input type="text" oninvalid="alert('You must fill out the form!');" name="fname" required>
-  <input type="submit" value="Submit">
+<p>When you reset the form, a function is triggered which alerts some text.</p>
+
+<form onreset="myFunction()">
+  Enter name: <input type="text">
+  <input type="reset">
 </form>
 
-<p>If you click submit, without filling out the text field, an alert message will occur.</p>
-
-<p><strong>Note:</strong> The oninvalid event is not supported in Safari.</p>
+<script>
+function myFunction() {
+  alert("The form was reset");
+}
+</script>
 
 </body>
 </html>
