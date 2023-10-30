@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html>
+<head>
+<style>
+div {
+  background: yellow;
+  border: 1px solid black;
+  padding: 10px;
+}
+</style>
+</head>
 <body>
+
+<div oncontextmenu="myFunction()" contextmenu="mymenu">
   <h1>Nguyễn Trung Đoàn</h1>
-<p>Select a new car from the list.</p>
+<p>Right-click inside this box to see the context menu!
 
-<select id="mySelect" onchange="myFunction()">
-  <option value="Audi">Audi
-  <option value="BMW">BMW
-  <option value="Mercedes">Mercedes
-  <option value="Volvo">Volvo
-</select>
+<menu type="context" id="mymenu">
+  <menuitem label="Refresh" onclick="window.location.reload();" icon="ico_reload.png"></menuitem>
+  <menu label="Share on...">
+    <menuitem label="Twitter" icon="ico_twitter.png" onclick="window.open('//twitter.com/intent/tweet?text=' + window.location.href);"></menuitem>
+    <menuitem label="Facebook" icon="ico_facebook.png" onclick="window.open('//facebook.com/sharer/sharer.php?u=' + window.location.href);"></menuitem>
+  </menu>
+  <menuitem label="Email This Page" onclick="window.location='mailto:?body='+window.location.href;"></menuitem>
+</menu>
 
-<p>When you select a new car, a function is triggered which outputs the value of the selected car.</p>
+</div>
 
-<p id="demo"></p>
+<p><strong>Note:</strong> The contextmenu <strong>attribute</strong> only works in Firefox!</p>
 
 <script>
 function myFunction() {
-  let x = document.getElementById("mySelect").value;
-  document.getElementById("demo").innerHTML = "You selected: " + x;
+  alert("You right-clicked inside the div!");
 }
 </script>
 
 </body>
 </html>
-
