@@ -1,3 +1,4 @@
+using FirstWebMVC.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace FirstWebMVC.Controllers ;
