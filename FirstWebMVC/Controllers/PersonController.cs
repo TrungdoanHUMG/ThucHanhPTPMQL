@@ -1,3 +1,4 @@
+using FirstWebMVC.Models;
 using  Microsoft.AspNetCore.Mvc;
 namespace FirstWebMVC.Controllers;
 public class PersonController : Controller
@@ -7,9 +8,9 @@ public class PersonController : Controller
         return View();
     }
     [HttpPost]
-    public IActionResult Index(string fname, string ID)
+    public IActionResult Index(Person ps)
     {
-        string strResult = "Welcome : " + fname.ToUpper() + " - " + ID;
+        string strResult = "Welcome : " +ps.fname.ToUpper() + " - " + ps.ID + "-" +ps.Address;
         ViewBag.Nhapthongtin = strResult;
         return View();
     }

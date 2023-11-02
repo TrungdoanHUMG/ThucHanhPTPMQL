@@ -10,9 +10,9 @@ public class EmployeeController : Controller
         return View();
     }
     [HttpPost]
-    public IActionResult Index(string fname, string email)
+    public IActionResult Index(Employee epm)
     {
-        string strResult = "Xin chao : " + fname.ToUpper() + " - " + email;
+        string strResult = "Xin chao : " + epm.fname.ToUpper() + " - " + epm.email + "-" + epm.ID + "-" + epm.Age;
         ViewBag.Nhandulieu = strResult;
         return View();
     }
