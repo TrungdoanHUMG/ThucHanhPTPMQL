@@ -10,87 +10,87 @@ using FirstWebMVC.Models;
 
 namespace FirstWebMVC.Controllers
 {
-    public class EmployeeController : Controller
+    public class DailyController : Controller
     {
         private readonly ApplicationDbContext _context;
 
-        public EmployeeController(ApplicationDbContext context)
+        public DailyController(ApplicationDbContext context)
         {
             _context = context;
         }
 
-        // GET: Employee
+        // GET: Daily
         public async Task<IActionResult> Index()
         {
-              return _context.Employee != null ? 
-                          View(await _context.Employee.ToListAsync()) :
-                          Problem("Entity set 'ApplicationDbContext.Employee'  is null.");
+              return _context.Daily != null ? 
+                          View(await _context.Daily.ToListAsync()) :
+                          Problem("Entity set 'ApplicationDbContext.Daily'  is null.");
         }
 
-        // GET: Employee/Details/5
+        // GET: Daily/Details/5
         public async Task<IActionResult> Details(string id)
         {
-            if (id == null || _context.Employee == null)
+            if (id == null || _context.Daily == null)
             {
                 return NotFound();
             }
 
-            var employee = await _context.Employee
-                .FirstOrDefaultAsync(m => m.fname == id);
-            if (employee == null)
+            var daily = await _context.Daily
+                .FirstOrDefaultAsync(m => m.MaDaiLy == id);
+            if (daily == null)
             {
                 return NotFound();
             }
 
-            return View(employee);
+            return View(daily);
         }
 
-        // GET: Employee/Create
+        // GET: Daily/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Employee/Create
+        // POST: Daily/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("fname,ID,email,Age")] Employee employee)
+        public async Task<IActionResult> Create([Bind("MaDaiLy,TenDaiLy,DiaChi,NguoiDaiDien,DienThoai,MaHTPP")] Daily daily)
         {
             if (ModelState.IsValid)
             {
-                _context.Add(employee);
+                _context.Add(daily);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(employee);
+            return View(daily);
         }
 
-        // GET: Employee/Edit/5
+        // GET: Daily/Edit/5
         public async Task<IActionResult> Edit(string id)
         {
-            if (id == null || _context.Employee == null)
+            if (id == null || _context.Daily == null)
             {
                 return NotFound();
             }
 
-            var employee = await _context.Employee.FindAsync(id);
-            if (employee == null)
+            var daily = await _context.Daily.FindAsync(id);
+            if (daily == null)
             {
                 return NotFound();
             }
-            return View(employee);
+            return View(daily);
         }
 
-        // POST: Employee/Edit/5
+        // POST: Daily/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(string id, [Bind("fname,ID,email,Age")] Employee employee)
+        public async Task<IActionResult> Edit(string id, [Bind("MaDaiLy,TenDaiLy,DiaChi,NguoiDaiDien,DienThoai,MaHTPP")] Daily daily)
         {
-            if (id != employee.fname)
+            if (id != daily.MaDaiLy)
             {
                 return NotFound();
             }
@@ -99,12 +99,12 @@ namespace FirstWebMVC.Controllers
             {
                 try
                 {
-                    _context.Update(employee);
+                    _context.Update(daily);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!EmployeeExists(employee.fname))
+                    if (!DailyExists(daily.MaDaiLy))
                     {
                         return NotFound();
                     }
@@ -115,49 +115,49 @@ namespace FirstWebMVC.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(employee);
+            return View(daily);
         }
 
-        // GET: Employee/Delete/5
+        // GET: Daily/Delete/5
         public async Task<IActionResult> Delete(string id)
         {
-            if (id == null || _context.Employee == null)
+            if (id == null || _context.Daily == null)
             {
                 return NotFound();
             }
 
-            var employee = await _context.Employee
-                .FirstOrDefaultAsync(m => m.fname == id);
-            if (employee == null)
+            var daily = await _context.Daily
+                .FirstOrDefaultAsync(m => m.MaDaiLy == id);
+            if (daily == null)
             {
                 return NotFound();
             }
 
-            return View(employee);
+            return View(daily);
         }
 
-        // POST: Employee/Delete/5
+        // POST: Daily/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(string id)
         {
-            if (_context.Employee == null)
+            if (_context.Daily == null)
             {
-                return Problem("Entity set 'ApplicationDbContext.Employee'  is null.");
+                return Problem("Entity set 'ApplicationDbContext.Daily'  is null.");
             }
-            var employee = await _context.Employee.FindAsync(id);
-            if (employee != null)
+            var daily = await _context.Daily.FindAsync(id);
+            if (daily != null)
             {
-                _context.Employee.Remove(employee);
+                _context.Daily.Remove(daily);
             }
             
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool EmployeeExists(string id)
+        private bool DailyExists(string id)
         {
-          return (_context.Employee?.Any(e => e.fname == id)).GetValueOrDefault();
+          return (_context.Daily?.Any(e => e.MaDaiLy == id)).GetValueOrDefault();
         }
     }
 }

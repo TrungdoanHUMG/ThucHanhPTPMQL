@@ -1,10 +1,15 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace FirstWebMVC.Models{
-    public class DaiLy{
-        public String MaDaiLy { get; set; }
-        public String TenDaiLy { get; set; }
-        public String DiaChi { get; set; }
-        public String NguoiDaiDien { get; set; }
-        public String DienThoai { get; set; }
-         public String MaHTPP { get; set; }
+    [Table("Daily")]
+    public class Daily{
+        [Key]
+        public string MaDaiLy { get; set; }
+        public string TenDaiLy { get; set; }
+        public string DiaChi { get; set; }
+        public string NguoiDaiDien { get; set; }
+        public string DienThoai { get; set; }
+         public string MaHTPP { get; set; }
     }
 }

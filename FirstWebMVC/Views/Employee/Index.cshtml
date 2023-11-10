@@ -1,21 +1,47 @@
+@model IEnumerable<FirstWebMVC.Models.Employee>
 
-<div class="w3-container">
- 
-    <div class="w3-card-4">
-      <div class="w3-container w3-green">
-        <h2>Employee Form</h2>
-      </div>
-      <form asp-action="Index" class="w3-container">
-      <h2>Enter Data</h2>
-       <hr>
-        <label>Full Name</label></p>
-        <input class="w3-input w3-border w3-round" name="fname" type="text" placeholder="Enter fullname"></p>   
-        <label>Employee ID</label></p>
-        <input class="w3-input w3-border w3-round" name="ID" type="text" placeholder="Enter ID"></p>   
-        <label>Email</label></p>
-        <input class="w3-input w3-border w3-round" name="email" type="Email" placeholder="Enter email"></p>
-        <input type="submit" value="Save"/>
-      </form>
-    </div>
-  </div>
-  <h1>@ViewBag.Nhandulieu</h1>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.ID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.email)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Age)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.email)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Age)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.fname">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.fname">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.fname">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

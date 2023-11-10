@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj": {}
+    "C:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj": {}
   },
   "projects": {
-    "D:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj": {
+    "C:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj",
+        "projectUniqueName": "C:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj",
         "projectName": "FirstWebMVC",
-        "projectPath": "D:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj",
-        "packagesPath": "C:\\Users\\Trung Doan\\.nuget\\packages\\",
-        "outputPath": "D:\\ThucHanhPTPMQL\\FirstWebMVC\\obj\\",
+        "projectPath": "C:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj",
+        "packagesPath": "C:\\Users\\trung\\.nuget\\packages\\",
+        "outputPath": "C:\\ThucHanhPTPMQL\\FirstWebMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Trung Doan\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\trung\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"

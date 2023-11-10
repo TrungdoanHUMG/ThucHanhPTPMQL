@@ -1,6 +1,11 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
 namespace FirstWebMVC.Models{
+    [Table("HeThongPhanPhoi")]
     public class HeThongPhanPhoi{
-        public String MaHTPP { get; set; }
-        public String TenHTPP { get; set; }
+        [Key]
+        public string MaHTPP { get; set; }
+        public  string TenHTPP { get; set; }
     }
 }
