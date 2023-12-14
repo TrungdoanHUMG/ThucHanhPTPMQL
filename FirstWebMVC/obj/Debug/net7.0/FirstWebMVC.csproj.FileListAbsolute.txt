@@ -267,7 +267,6 @@ D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win-arm\native\Microsoft
 D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
 D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
-D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\Microsoft.Win32.SystemEvents.dll
 D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\alpine-arm\native\libe_sqlite3.so
 D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\alpine-arm64\native\libe_sqlite3.so
 D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\alpine-x64\native\libe_sqlite3.so
@@ -291,8 +290,6 @@ D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win-arm\native\e_sqlite3
 D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win-arm64\native\e_sqlite3.dll
 D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win-x64\native\e_sqlite3.dll
 D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win-x86\native\e_sqlite3.dll
-D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\unix\lib\net6.0\System.Drawing.Common.dll
-D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Drawing.Common.dll
 D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
@@ -560,3 +557,15 @@ C:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Se
 C:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\ThucHanhPTPMQL\FirstWebMVC\obj\Debug\net7.0\FirstWebMVC.csproj.AssemblyReference.cache
 C:\ThucHanhPTPMQL\FirstWebMVC\obj\Debug\net7.0\FirstWebMVC.csproj.CopyComplete
+D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\EPPlus.dll
+D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\EPPlus.Interfaces.dll
+D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\EPPlus.System.Drawing.dll
+D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\Microsoft.IO.RecyclableMemoryStream.dll
+D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\System.Security.Cryptography.Pkcs.dll
+D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win\lib\net7.0\Microsoft.Win32.SystemEvents.dll
+D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
+D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
+D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\JetBrains.Annotations.dll
+D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\X.PagedList.dll
+D:\ThucHanhPTPMQL\FirstWebMVC\bin\Debug\net7.0\X.PagedList.Mvc.Core.dll
+D:\ThucHanhPTPMQL\FirstWebMVC\obj\Debug\net7.0\FirstWebMVC.MvcApplicationPartsAssemblyInfo.cs

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj": {}
+    "D:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj": {}
   },
   "projects": {
-    "C:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj": {
+    "D:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj",
+        "projectUniqueName": "D:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj",
         "projectName": "FirstWebMVC",
-        "projectPath": "C:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj",
-        "packagesPath": "C:\\Users\\trung\\.nuget\\packages\\",
-        "outputPath": "C:\\ThucHanhPTPMQL\\FirstWebMVC\\obj\\",
+        "projectPath": "D:\\ThucHanhPTPMQL\\FirstWebMVC\\FirstWebMVC.csproj",
+        "packagesPath": "C:\\Users\\Trung Doan\\.nuget\\packages\\",
+        "outputPath": "D:\\ThucHanhPTPMQL\\FirstWebMVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\trung\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Trung Doan\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
@@ -38,6 +38,10 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "EPPlus": {
+              "target": "Package",
+              "version": "[7.0.3, )"
+            },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
@@ -61,6 +65,10 @@
             "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[7.0.11, )"
+            },
+            "X.PagedList.Mvc.Core": {
+              "target": "Package",
+              "version": "[8.4.7, )"
             }
           },
           "imports": [

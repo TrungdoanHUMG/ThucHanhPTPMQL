@@ -7,8 +7,8 @@ namespace FirstWebMVC.Models
     public class Person 
     {
         [Key]
-        public string fname { get; set; }
         public string ID { get; set; }
+        public string fname { get; set; }
         public string Address { get; set; }
     }
 }
